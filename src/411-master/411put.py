@@ -366,6 +366,9 @@ absolute path (after any chroots) will be maintained on clients."""
 		"""Prepare a 411 file for publishing. Uses a hybrid
 		RSA-Blowfish encryption method."""
 
+		# set umask to something sane
+		os.umask(0022)
+
 		if not filename:
 			raise Error411, "Please specify a file."
 		if self.chroot:
