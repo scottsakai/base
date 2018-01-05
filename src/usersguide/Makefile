@@ -6,8 +6,9 @@
 # 				Rocks(r)
 # 		         www.rocksclusters.org
 # 		         version 6.2 (SideWinder)
+# 		         version 7.0 (Manzanita)
 # 
-# Copyright (c) 2000 - 2014 The Regents of the University of California.
+# Copyright (c) 2000 - 2017 The Regents of the University of California.
 # All rights reserved.	
 # 
 # Redistribution and use in source and binary forms, with or without
@@ -171,6 +172,7 @@ pdf: predoc
 
 install:: build
 	mkdir -p $(ROOT)/$(PKGROOT)/images/install
+	mkdir -p $(ROOT)/$(PKGROOT)/images/install7
 	mkdir -p $(ROOT)/$(PKGROOT)/stylesheet-images
 	mkdir -p $(ROOT)/$(PKGROOT)/examples
 	install -ma+r index.pdf 	$(ROOT)/$(PKGROOT)/$(NAME).pdf
@@ -178,6 +180,8 @@ install:: build
 	install -ma+r images/*.png	$(ROOT)/$(PKGROOT)/images/
 	install -ma+r images/install/*.png	\
 		$(ROOT)/$(PKGROOT)/images/install
+	install -ma+r images/install7/*.png	\
+		$(ROOT)/$(PKGROOT)/images/install7
 	install -ma+r stylesheet-images/{*.gif,*.png} \
 		$(ROOT)/$(PKGROOT)/stylesheet-images/
 	install -ma+r rocks.css $(ROOT)/$(PKGROOT)/

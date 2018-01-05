@@ -7,8 +7,9 @@
 # 				Rocks(r)
 # 		         www.rocksclusters.org
 # 		         version 6.2 (SideWinder)
+# 		         version 7.0 (Manzanita)
 # 
-# Copyright (c) 2000 - 2014 The Regents of the University of California.
+# Copyright (c) 2000 - 2017 The Regents of the University of California.
 # All rights reserved.	
 # 
 # Redistribution and use in source and binary forms, with or without
@@ -590,7 +591,7 @@ class App(rocks.sql.Application):
 			self.cpus = self.form['np'].value
 		if os.environ.has_key('HTTP_NP'):
 			self.cpus = os.environ['HTTP_NP']
-		if re.search("[^0-9]", self.cpus):
+		if self.cpus is not None and re.search("[^0-9]", self.cpus):
 			self.cpus = None
 
 

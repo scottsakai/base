@@ -359,8 +359,20 @@
 		<tail>devel-server</tail>
 	</order>
 
-	<order head="database-sec">
+	<order head="database-data">
 		<tail>devel-appliance</tail>
+	</order>
+
+	<order head="database-server">
+		<tail>devel-appliance</tail>
+	</order>
+
+	<order head="database-server">
+		<tail>rocks-dist</tail>
+	</order>
+
+	<order head="devel-appliance">
+		<tail>rocks-dist</tail>
 	</order>
 
 	<order tail="server-firewall">
@@ -373,6 +385,7 @@
 	</order>
 
 	<order head="grub">
+		<tail>grub2-client</tail>
 		<tail>grub-client</tail>
 		<tail>grub-server</tail>
 	</order>
@@ -483,6 +496,8 @@
 		<to>snmp-client</to>
 		<to>rocks-devel</to>
 		<to>bootstrap-packages-base</to>
+		<to>bootstrap-packages-core</to>
+		<to>devel-server</to>
 	</edge>
 
 	<edge from="base">
@@ -588,6 +603,10 @@
 
 	<edge cond="rocks_version_major == 6" from="client">
 		<to os="linux">grub-client</to>
+	</edge>
+
+	<edge cond="rocks_version_major == 7" from="client">
+		<to os="linux">grub2-client</to>
 	</edge>
 
 	<edge from="security-client">

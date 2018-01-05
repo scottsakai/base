@@ -5,8 +5,9 @@
 # 				Rocks(r)
 # 		         www.rocksclusters.org
 # 		         version 6.2 (SideWinder)
+# 		         version 7.0 (Manzanita)
 # 
-# Copyright (c) 2000 - 2014 The Regents of the University of California.
+# Copyright (c) 2000 - 2017 The Regents of the University of California.
 # All rights reserved.	
 # 
 # Redistribution and use in source and binary forms, with or without
@@ -96,7 +97,7 @@ install::
 	mkdir -p $(ROOT)/$(PKGROOT)/sbin
 	mkdir -p $(ROOT)/$(SCRIPTDEST)
 	$(INSTALL) -m0500 sec_channel_server $(ROOT)/$(PKGROOT)/sbin
-	$(INSTALL) -m755 $(SCRIPTSRC) $(ROOT)/$(SCRIPTDEST)/$(SCRIPT)
+	$(INSTALL) -m644 $(SCRIPTSRC) $(ROOT)/$(SCRIPTDEST)/$(SCRIPT)
 
 clean::
 	rm -rf sec_channel_server	\

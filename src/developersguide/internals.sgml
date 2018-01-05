@@ -564,8 +564,9 @@ When you edit "valgrind-base.xml", you'll see:
         				Rocks(r)
         		         www.rocksclusters.org
         		         version 6.2 (SideWinder)
+        		         version 7.0 (Manzanita)
         
-        Copyright (c) 2000 - 2014 The Regents of the University of California.
+        Copyright (c) 2000 - 2017 The Regents of the University of California.
         All rights reserved.	
         
         Redistribution and use in source and binary forms, with or without
@@ -672,8 +673,9 @@ Now let's add a <constant>&lt;post&gt;</constant> section to it:
         				Rocks(r)
         		         www.rocksclusters.org
         		         version 6.2 (SideWinder)
+        		         version 7.0 (Manzanita)
         
-        Copyright (c) 2000 - 2014 The Regents of the University of California.
+        Copyright (c) 2000 - 2017 The Regents of the University of California.
         All rights reserved.	
         
         Redistribution and use in source and binary forms, with or without
@@ -836,8 +838,9 @@ Now edit the file "valgrind.xml":
         				Rocks(r)
         		         www.rocksclusters.org
         		         version 6.2 (SideWinder)
+        		         version 7.0 (Manzanita)
         
-        Copyright (c) 2000 - 2014 The Regents of the University of California.
+        Copyright (c) 2000 - 2017 The Regents of the University of California.
         All rights reserved.	
         
         Redistribution and use in source and binary forms, with or without
@@ -941,8 +944,9 @@ nodes, we'll make an edge from the "base" node XML file to "valgrind-base":
         				Rocks(r)
         		         www.rocksclusters.org
         		         version 6.2 (SideWinder)
+        		         version 7.0 (Manzanita)
         
-        Copyright (c) 2000 - 2014 The Regents of the University of California.
+        Copyright (c) 2000 - 2017 The Regents of the University of California.
         All rights reserved.	
         
         Redistribution and use in source and binary forms, with or without
@@ -1097,8 +1101,9 @@ Here's the contents of "valgrind-client.xml":
 					Rocks(r)
 			         www.rocksclusters.org
 			         version 6.2 (SideWinder)
+			         version 7.0 (Manzanita)
 	
-	Copyright (c) 2000 - 2014 The Regents of the University of California.
+	Copyright (c) 2000 - 2017 The Regents of the University of California.
 	All rights reserved.	
 	
 	Redistribution and use in source and binary forms, with or without
@@ -1204,8 +1209,9 @@ And here is the contents of "valgrind-server.xml":
 					Rocks(r)
 			         www.rocksclusters.org
 			         version 6.2 (SideWinder)
+			         version 7.0 (Manzanita)
 	
-	Copyright (c) 2000 - 2014 The Regents of the University of California.
+	Copyright (c) 2000 - 2017 The Regents of the University of California.
 	All rights reserved.	
 	
 	Redistribution and use in source and binary forms, with or without
@@ -1315,8 +1321,9 @@ graph XML file "valgrind.xml" to look like:
         				Rocks(r)
         		         www.rocksclusters.org
         		         version 6.2 (SideWinder)
+        		         version 7.0 (Manzanita)
         
-        Copyright (c) 2000 - 2014 The Regents of the University of California.
+        Copyright (c) 2000 - 2017 The Regents of the University of California.
         All rights reserved.	
         
         Redistribution and use in source and binary forms, with or without
@@ -1465,8 +1472,9 @@ We can enforce this ordering by adding two
 					Rocks(r)
 			         www.rocksclusters.org
 			         version 6.2 (SideWinder)
+			         version 7.0 (Manzanita)
 	
-	Copyright (c) 2000 - 2014 The Regents of the University of California.
+	Copyright (c) 2000 - 2017 The Regents of the University of California.
 	All rights reserved.	
 	
 	Redistribution and use in source and binary forms, with or without
